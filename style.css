@@ -518,8 +518,16 @@ spline-viewer {
   height: 100%;
   display: block;
 }
-spline-viewer::part(logo) {
-  display: none !important;
+.robot-right::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 160px;
+  height: 40px;
+  background: #06060a;
+  z-index: 10;
+  pointer-events: none;
 }
 
 /* ===== SERVICES ===== */
