@@ -518,6 +518,9 @@ spline-viewer {
   height: 100%;
   display: block;
 }
+spline-viewer::part(logo) {
+  display: none !important;
+}
 
 /* ===== SERVICES ===== */
 #services { background: var(--surface); }
