@@ -631,6 +631,7 @@ spline-viewer {
 .pc-3 { grid-column: span 4; }
 .pc-4 { grid-column: span 4; }
 .pc-5 { grid-column: span 4; }
+.pc-make { grid-column: span 6; }
 .project-image { height: 200px; position: relative; overflow: hidden; }
 .project-image-screenshot {
   background-size: cover;
@@ -1625,6 +1626,7 @@ footer p { font-size: 13px; color: var(--muted); }
   .pc-3 { grid-column: span 6; }
   .pc-4 { grid-column: span 6; }
   .pc-5 { grid-column: span 6; }
+  .pc-make { grid-column: span 6; }
   .about-layout { grid-template-columns: 1fr; gap: 60px; }
   .contact-box { grid-template-columns: 1fr; padding: 48px; gap: 48px; }
   .booking-card { grid-template-columns: 1fr; }
@@ -1640,7 +1642,7 @@ footer p { font-size: 13px; color: var(--muted); }
   .hero-visual { width: 100%; max-width: 340px; }
   .ft1, .ft2, .ft3 { display: none; }
   .services-grid { grid-template-columns: 1fr; }
-  .pc-1,.pc-2,.pc-3,.pc-4,.pc-5 { grid-column: span 12; }
+  .pc-1,.pc-2,.pc-3,.pc-4,.pc-5,.pc-make { grid-column: span 12; }
   .testimonials-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .contact-box { padding: 32px 24px; gap: 36px; }
