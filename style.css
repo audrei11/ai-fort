@@ -640,6 +640,8 @@ spline-viewer {
 }
 .project-card:hover .project-image-screenshot { background-position: bottom center; }
 .pc-1 .project-image { height: 240px; }
+.pc-make .project-image { background: linear-gradient(135deg, #1a0a2e, #2d1b6b, #1a0a2e); }
+.make-fallback { display: flex; }
 .pi-1 { background: linear-gradient(135deg, #0f0c29, #1a1060, #0f0c29); }
 .pi-2 { background: linear-gradient(135deg, #0a0f1e, #0d1f35, #070d18); }
 .pi-3 { background: linear-gradient(135deg, #0a0f2e, #1a1060, #0d1535); }
