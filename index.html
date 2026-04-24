@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redel Santos — AI Automation Specialist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- AURORA -->
+  <div class="aurora">
+    <div class="aurora-blob ab1"></div>
+    <div class="aurora-blob ab2"></div>
+    <div class="aurora-blob ab3"></div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">REDEL<span>WORKZ</span></a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#stack">Stack</a>
+      <a href="#about">About</a>
+      <a href="#contact">Let's Talk</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="eyebrow-line"></div>
+        <span class="eyebrow-text">AI Automation Specialist</span>
+      </div>
+      <h1>
+        Workflows that<br />
+        <span class="gradient-text">think for you.</span>
+      </h1>
+      <p class="hero-sub">
+        Hi, I'm <strong>Redel Santos</strong> — I build scalable no-code and AI-powered systems
+        using n8n, Make, and Zapier. From RAG pipelines and Voice AI agents to full custom web apps,
+        I eliminate manual work and automate entire operations.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View My Work →</a>
+        <a href="#contact" class="btn-ghost">Start a Project</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Companies Served</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">RAG</span>
+          <span class="stat-label">& Voice AI Expert</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">n8n</span>
+          <span class="stat-label">Make · Zapier Pro</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="profile-ring">
+          <img src="profile.png" alt="Redel Santos" class="profile-img" />
+        </div>
+        <div class="hero-card-name">Redel Santos</div>
+        <div class="hero-card-title">Automation Specialist</div>
+        <div class="hero-card-tags">
+          <span>n8n</span>
+          <span>Make</span>
+          <span>RAG</span>
+          <span>Voice AI</span>
+          <span>Zapier</span>
+          <span>Claude AI</span>
+        </div>
+        <div class="avail-badge">
+          <span class="avail-dot"></span>
+          Available for projects
+        </div>
+      </div>
+      <div class="floating-tag ft1">⚡ RAG System Built</div>
+      <div class="floating-tag ft2">🤖 Voice AI Agent</div>
+      <div class="floating-tag ft3">✦ n8n Expert</div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span>n8n Automation</span>
+      <span>Make Workflows</span>
+      <span>Zapier Integration</span>
+      <span>RAG Systems</span>
+      <span>Voice AI Agents</span>
+      <span>AI Chatbots</span>
+      <span>Apify Scraping</span>
+      <span>Claude AI</span>
+      <span>CRM Automation</span>
+      <span>Web App Development</span>
+      <span>POS Systems</span>
+      <span>Marketing Automation</span>
+      <span>n8n Automation</span>
+      <span>Make Workflows</span>
+      <span>Zapier Integration</span>
+      <span>RAG Systems</span>
+      <span>Voice AI Agents</span>
+      <span>AI Chatbots</span>
+      <span>Apify Scraping</span>
+      <span>Claude AI</span>
+      <span>CRM Automation</span>
+      <span>Web App Development</span>
+      <span>POS Systems</span>
+      <span>Marketing Automation</span>
+    </div>
+  </div>
+
+  <!-- ROBOT 3D -->
+  <section id="robot-section">
+    <div class="container">
+      <div class="robot-card">
+        <div class="spotlight-fx"></div>
+        <div class="robot-left">
+          <div class="hero-eyebrow" style="margin-bottom:20px">
+            <div class="eyebrow-line"></div>
+            <span class="eyebrow-text">AI-Powered</span>
+          </div>
+          <h2 class="robot-title">
+            Automation<br />
+            <span class="gradient-text">That Thinks.</span>
+          </h2>
+          <p class="robot-desc">
+            I build AI systems that work around the clock — Voice agents, RAG pipelines,
+            and n8n workflows that replace entire manual processes. Intelligent. Scalable. Always on.
+          </p>
+          <a href="#contact" class="btn-primary" style="margin-top:8px">Start a Project →</a>
+        </div>
+        <div class="robot-right">
+          <spline-viewer
+            url="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+            loading-anim-type="spinner-small-dark">
+          </spline-viewer>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">
+          <span class="section-num">01</span>
+          <div class="section-line"></div>
+          <span class="section-tag-text">Services</span>
+        </div>
+        <h2>What I build<br /><span class="gradient-text">for you.</span></h2>
+        <p>From no-code pipelines to full AI-powered applications — end-to-end, top to bottom.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card featured" style="--accent:#7C6FF7;--accent-subtle:rgba(124,111,247,0.07);--accent-glow:rgba(124,111,247,0.22)">
+          <div class="service-num">001</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 4L4 12v16l16 8 16-8V12L20 4z" stroke="currentColor" stroke-width="1.5"/><path d="M4 12l16 8 16-8M20 20v12" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Workflow Automation</h3>
+          <p>n8n, Make, and Zapier pipelines that connect your tools and eliminate every repetitive task across CRM, comms, and data.</p>
+          <ul class="service-features">
+            <li>Multi-step automation pipelines</li>
+            <li>CRM & lead capture workflows</li>
+            <li>Slack bots & notification systems</li>
+          </ul>
+          <span class="service-badge">Core Expertise</span>
+        </div>
+        <div class="service-card" style="--accent:#3B82F6;--accent-subtle:rgba(59,130,246,0.05);--accent-glow:rgba(59,130,246,0.22)">
+          <div class="service-num">002</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="4" y="8" width="32" height="24" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 16h16M12 20h10M12 24h13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>RAG System Development</h3>
+          <p>Retrieval-Augmented Generation pipelines for intelligent document retrieval and knowledge management. Your data, made searchable by AI.</p>
+          <ul class="service-features">
+            <li>Document Q&A systems</li>
+            <li>Knowledge base automation</li>
+            <li>Vector search integration</li>
+          </ul>
+        </div>
+        <div class="service-card" style="--accent:#06B6D4;--accent-subtle:rgba(6,182,212,0.05);--accent-glow:rgba(6,182,212,0.22)">
+          <div class="service-num">003</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M20 4v4M20 32v4M4 20h4M32 20h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="20" r="3" fill="currentColor"/></svg>
+          </div>
+          <h3>Voice AI Agent</h3>
+          <p>Develop and deploy Voice AI Agents for automated client communication — 24/7 inbound handling, lead qualification, and follow-ups.</p>
+          <ul class="service-features">
+            <li>Automated client communication</li>
+            <li>Lead qualification via voice</li>
+            <li>Fully hands-off operation</li>
+          </ul>
+        </div>
+        <div class="service-card" style="--accent:#10B981;--accent-subtle:rgba(16,185,129,0.05);--accent-glow:rgba(16,185,129,0.22)">
+          <div class="service-num">004</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="6" width="28" height="28" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M14 20l4 4 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>AI Chatbot & Agents</h3>
+          <p>Bots and autonomous agents for business operations — Facebook page chatbots, inventory agents, spec calculators, and compliance tools.</p>
+          <ul class="service-features">
+            <li>Facebook & web chatbots</li>
+            <li>Inventory & ops AI agents</li>
+            <li>Spec calculator bots</li>
+          </ul>
+        </div>
+        <div class="service-card" style="--accent:#F59E0B;--accent-subtle:rgba(245,158,11,0.05);--accent-glow:rgba(245,158,11,0.22)">
+          <div class="service-num">005</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M8 28V16l12-8 12 8v12l-12 8-12-8z" stroke="currentColor" stroke-width="1.5"/><path d="M20 8v24M8 16l12 8 12-8" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Data Scraping & Leads</h3>
+          <p>Apify-powered web scraping at scale for lead capture, enrichment, and nurturing — fed directly into your CRM automatically.</p>
+          <ul class="service-features">
+            <li>Apify scraping pipelines</li>
+            <li>Lead capture & enrichment</li>
+            <li>Multi-channel nurturing</li>
+          </ul>
+        </div>
+        <div class="service-card" style="--accent:#EC4899;--accent-subtle:rgba(236,72,153,0.05);--accent-glow:rgba(236,72,153,0.22)">
+          <div class="service-num">006</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="18" width="14" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="22" y="18" width="14" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Custom Web App Dev</h3>
+          <p>Full web applications built with Claude AI and VS Code — multi-branch dashboards, POS systems, KDS, and full marketing automation platforms.</p>
+          <ul class="service-features">
+            <li>Multi-branch dashboards</li>
+            <li>POS & Kitchen Display Systems</li>
+            <li>Marketing automation apps</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">
+          <span class="section-num">02</span>
+          <div class="section-line"></div>
+          <span class="section-tag-text">Portfolio</span>
+        </div>
+        <h2>Real systems.<br /><span class="gradient-text">Real results.</span></h2>
+        <p>Built across industries — lending, manufacturing, food, contracting, and construction.</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- FEATURED: AHJIN — uses roofing.jpg as fallback, replace with ahjin.jpg when saved -->
+        <div class="project-card pc-1">
+          <div class="project-image project-image-screenshot" style="background-image: url('ahjin.jpg'), url('roofing.jpg'); background-position: top center;">
+            <div class="project-overlay">
+              <div class="project-tags">
+                <span>AHJIN Roofing</span><span>Jarvis AI</span><span>Satellite Measurement</span><span>Full Business App</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-company">Roofing Company · Dec 2025 – Feb 2026</div>
+            <h3>AHJIN Roofing System + Jarvis AI</h3>
+            <p>Full-stack roofing business platform — satellite-based roof measurement, AI facet & pitch detection, automated sq ft calculation, proposals, PDF signer, invoices, material orders, employee assignment, workflow automation, and built-in Jarvis AI assistant.</p>
+            <div class="project-metrics">
+              <div class="metric"><span>AI</span> Satellite Measurement</div>
+              <div class="metric"><span>Jarvis</span> AI Built-in</div>
+              <div class="metric"><span>Full</span> Business Suite</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card pc-2">
+          <div class="project-image project-image-screenshot" style="background-image: url('nexpos.jpg'); background-position: top center;">
+            <div class="project-overlay">
+              <div class="project-tags">
+                <span>NEXPOS PRO</span><span>POS System</span><span>Web App</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-company">Bakery Company · Jul – Aug 2025</div>
+            <h3>NEXPOS PRO — POS System</h3>
+            <p>Custom POS with live product grid, cart, multi-payment (Cash, Card, QR Pay), inventory, ingredients, customers, and full reports dashboard.</p>
+            <div class="project-metrics">
+              <div class="metric"><span>Multi</span> Payment Methods</div>
+              <div class="metric"><span>Live</span> Inventory</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card pc-3">
+          <div class="project-image project-image-screenshot" style="background-image: url('phonecalls.jpg'); background-position: top center;">
+            <div class="project-overlay">
+              <div class="project-tags">
+                <span>Make</span><span>AI Transcribe</span><span>Slack</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-company">Automation Project</div>
+            <h3>Phone Calls Capturer</h3>
+            <p>Records, transcribes via AI, logs to Google Sheets, sends summaries to Slack and Gmail — fully automated.</p>
+            <div class="project-metrics">
+              <div class="metric"><span>AI</span> Transcription</div>
+              <div class="metric"><span>Auto</span> Slack + Gmail</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card pc-4">
+          <div class="project-image project-image-screenshot" style="background-image: url('pitch.jpg'); background-position: center;">
+            <div class="project-overlay">
+              <div class="project-tags">
+                <span>Roof Pitch AI</span><span>Street View</span><span>Web App</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-company">Roofing Company · Dec 2025 – Feb 2026</div>
+            <h3>AI Roof Pitch Calculator</h3>
+            <p>Street View-integrated pitch tool — drag to roof peak, select slope line, instantly calculates and outputs the roof pitch.</p>
+            <div class="project-metrics">
+              <div class="metric"><span>AI</span> Pitch Detection</div>
+              <div class="metric"><span>Live</span> Street View</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card pc-5">
+          <div class="project-image pi-1">
+            <div class="project-image-inner"><div class="project-glyph">RAG</div></div>
+            <div class="project-overlay">
+              <div class="project-tags">
+                <span>RAG</span><span>Voice AI</span><span>n8n</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-company">Contractor Company · Sep – Nov 2025</div>
+            <h3>RAG + Voice AI Suite</h3>
+            <p>RAG system for intelligent document retrieval, Voice AI Agent for 24/7 client communication, and Google Drive deep organizer.</p>
+            <div class="project-metrics">
+              <div class="metric"><span>RAG</span> Doc Retrieval</div>
+              <div class="metric"><span>24/7</span> Voice AI</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">
+          <span class="section-num">03</span>
+          <div class="section-line"></div>
+          <span class="section-tag-text">Stack</span>
+        </div>
+        <h2>Tools I use<br /><span class="gradient-text">every day.</span></h2>
+        <p>The exact platforms powering every layer of my automation work.</p>
+      </div>
+
+      <div class="stack-bento">
+
+        <!-- 01 Automation — wide panel -->
+        <div class="sp sp-wide" style="--pc:#FF6D5A;--pg:rgba(255,109,90,0.07)">
+          <div class="sp-head">
+            <span class="sp-n">01</span>
+            <span class="sp-t">Automation Platforms</span>
+            <span class="sp-count">4 tools</span>
+          </div>
+          <div class="sp-grid">
+            <div class="logo-card" style="--brand-color:#FF6D5A;--brand-glow:rgba(255,109,90,0.2)"><div class="logo-icon" style="background:#1f0d04"><img src="https://cdn.simpleicons.org/n8n/FF6D5A" alt="n8n"/></div><span>n8n</span></div>
+            <div class="logo-card" style="--brand-color:#9B59F5;--brand-glow:rgba(155,89,245,0.2)"><div class="logo-icon" style="background:#160b2e"><img src="https://cdn.simpleicons.org/make/9B59F5" alt="Make"/></div><span>Make</span></div>
+            <div class="logo-card" style="--brand-color:#FF4A00;--brand-glow:rgba(255,74,0,0.2)"><div class="logo-icon" style="background:#1f0d00"><img src="https://cdn.simpleicons.org/zapier/FF4A00" alt="Zapier"/></div><span>Zapier</span></div>
+            <div class="logo-card" style="--brand-color:#25D366;--brand-glow:rgba(37,211,102,0.2)"><div class="logo-icon" style="background:#041a0a"><svg viewBox="0 0 44 22" fill="none"><text x="0" y="18" font-family="Arial Black,sans-serif" font-size="17" font-weight="900" fill="#25D366">GHL</text></svg></div><span>GoHighLevel</span></div>
+          </div>
+        </div>
+
+        <!-- 02 AI & LLMs -->
+        <div class="sp" style="--pc:#7C6FF7;--pg:rgba(124,111,247,0.07)">
+          <div class="sp-head">
+            <span class="sp-n">02</span>
+            <span class="sp-t">AI & LLMs</span>
+            <span class="sp-count">4 tools</span>
+          </div>
+          <div class="sp-grid">
+            <div class="logo-card" style="--brand-color:#CC785C;--brand-glow:rgba(204,120,92,0.2)"><div class="logo-icon" style="background:#1f1008"><img src="https://cdn.simpleicons.org/anthropic/CC785C" alt="Claude"/></div><span>Claude AI</span></div>
+            <div class="logo-card" style="--brand-color:#ffffff;--brand-glow:rgba(255,255,255,0.1)"><div class="logo-icon" style="background:#111111"><img src="https://cdn.simpleicons.org/openai/ffffff" alt="OpenAI"/></div><span>OpenAI GPT-4</span></div>
+            <div class="logo-card" style="--brand-color:#4285F4;--brand-glow:rgba(66,133,244,0.2)"><div class="logo-icon" style="background:#050e28"><img src="https://cdn.simpleicons.org/googlegemini/4285F4" alt="Gemini"/></div><span>Gemini</span></div>
+            <div class="logo-card" style="--brand-color:#ffffff;--brand-glow:rgba(255,255,255,0.08)"><div class="logo-icon" style="background:#111111"><img src="https://cdn.simpleicons.org/x/ffffff" alt="Grok"/></div><span>Grok</span></div>
+          </div>
+        </div>
+
+        <!-- 03 Data & Outreach -->
+        <div class="sp" style="--pc:#34D058;--pg:rgba(52,208,88,0.07)">
+          <div class="sp-head">
+            <span class="sp-n">03</span>
+            <span class="sp-t">Data & Outreach</span>
+            <span class="sp-count">4 tools</span>
+          </div>
+          <div class="sp-grid">
+            <div class="logo-card" style="--brand-color:#34D058;--brand-glow:rgba(52,208,88,0.2)"><div class="logo-icon" style="background:#041a08"><img src="https://cdn.simpleicons.org/apify/34D058" alt="Apify"/></div><span>Apify</span></div>
+            <div class="logo-card" style="--brand-color:#6C47FF;--brand-glow:rgba(108,71,255,0.2)"><div class="logo-icon" style="background:#0e0820"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="13" fill="#6C47FF"/><path d="M10 21l6-11 6 11H10z" fill="white"/></svg></div><span>Instantly</span></div>
+            <div class="logo-card" style="--brand-color:#EA4335;--brand-glow:rgba(234,67,53,0.2)"><div class="logo-icon" style="background:#200806"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Gmail"/></div><span>Gmail Agent</span></div>
+            <div class="logo-card" style="--brand-color:#34A853;--brand-glow:rgba(52,168,83,0.2)"><div class="logo-icon" style="background:#041a08"><img src="https://cdn.simpleicons.org/googlesheets/34A853" alt="Sheets"/></div><span>Google Sheets</span></div>
+          </div>
+        </div>
+
+        <!-- 04 CRM & Comms -->
+        <div class="sp" style="--pc:#E01E5A;--pg:rgba(224,30,90,0.07)">
+          <div class="sp-head">
+            <span class="sp-n">04</span>
+            <span class="sp-t">CRM & Comms</span>
+            <span class="sp-count">4 tools</span>
+          </div>
+          <div class="sp-grid">
+            <div class="logo-card" style="--brand-color:#E01E5A;--brand-glow:rgba(224,30,90,0.2)"><div class="logo-icon" style="background:#1a0614"><img src="https://cdn.simpleicons.org/slack/E01E5A" alt="Slack"/></div><span>Slack</span></div>
+            <div class="logo-card" style="--brand-color:#EA4335;--brand-glow:rgba(234,67,53,0.2)"><div class="logo-icon" style="background:#200806"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Gmail"/></div><span>Gmail</span></div>
+            <div class="logo-card" style="--brand-color:#F22F46;--brand-glow:rgba(242,47,70,0.2)"><div class="logo-icon" style="background:#1f0408"><img src="https://cdn.simpleicons.org/twilio/F22F46" alt="Twilio"/></div><span>Twilio</span></div>
+            <div class="logo-card" style="--brand-color:#FF7A59;--brand-glow:rgba(255,122,89,0.2)"><div class="logo-icon" style="background:#1f0e04"><img src="https://cdn.simpleicons.org/hubspot/FF7A59" alt="HubSpot"/></div><span>HubSpot CRM</span></div>
+          </div>
+        </div>
+
+        <!-- 05 Dev & Deployment -->
+        <div class="sp" style="--pc:#3ECF8E;--pg:rgba(62,207,142,0.07)">
+          <div class="sp-head">
+            <span class="sp-n">05</span>
+            <span class="sp-t">Dev & Deployment</span>
+            <span class="sp-count">4 tools</span>
+          </div>
+          <div class="sp-grid">
+            <div class="logo-card" style="--brand-color:#ffffff;--brand-glow:rgba(255,255,255,0.08)"><div class="logo-icon" style="background:#111111"><img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub"/></div><span>GitHub</span></div>
+            <div class="logo-card" style="--brand-color:#ffffff;--brand-glow:rgba(255,255,255,0.08)"><div class="logo-icon" style="background:#111111"><img src="https://cdn.simpleicons.org/vercel/ffffff" alt="Vercel"/></div><span>Vercel</span></div>
+            <div class="logo-card" style="--brand-color:#3ECF8E;--brand-glow:rgba(62,207,142,0.2)"><div class="logo-icon" style="background:#041a0c"><img src="https://cdn.simpleicons.org/supabase/3ECF8E" alt="Supabase"/></div><span>Supabase</span></div>
+            <div class="logo-card" style="--brand-color:#007ACC;--brand-glow:rgba(0,122,204,0.2)"><div class="logo-icon" style="background:#001828"><img src="https://cdn.simpleicons.org/visualstudiocode/007ACC" alt="VS Code"/></div><span>VS Code</span></div>
+          </div>
+        </div>
+
+        <!-- 06 Business Apps — full-width showcase -->
+        <div class="sp sp-full" style="--pc:#4285F4;--pg:rgba(66,133,244,0.07)">
+          <div class="sp-head">
+            <span class="sp-n">06</span>
+            <span class="sp-t">Business Apps</span>
+            <span class="sp-count">4 tools</span>
+          </div>
+          <div class="sp-grid sp-grid-showcase">
+            <div class="logo-card" style="--brand-color:#4285F4;--brand-glow:rgba(66,133,244,0.2)"><div class="logo-icon" style="background:#050e28"><img src="https://cdn.simpleicons.org/googledrive/4285F4" alt="Drive"/></div><span>Google Drive</span></div>
+            <div class="logo-card" style="--brand-color:#1877F2;--brand-glow:rgba(24,119,242,0.2)"><div class="logo-icon" style="background:#050e28"><img src="https://cdn.simpleicons.org/facebook/1877F2" alt="Facebook"/></div><span>Facebook Bots</span></div>
+            <div class="logo-card" style="--brand-color:#18BFFF;--brand-glow:rgba(24,191,255,0.2)"><div class="logo-icon" style="background:#041420"><img src="https://cdn.simpleicons.org/airtable/18BFFF" alt="Airtable"/></div><span>Airtable</span></div>
+            <div class="logo-card" style="--brand-color:#ffffff;--brand-glow:rgba(255,255,255,0.08)"><div class="logo-icon" style="background:#111111"><img src="https://cdn.simpleicons.org/notion/ffffff" alt="Notion"/></div><span>Notion</span></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about-layout">
+      <div class="about-text">
+        <div class="section-label" style="margin-bottom:20px">
+          <span class="section-num">04</span>
+          <div class="section-line"></div>
+          <span class="section-tag-text">About</span>
+        </div>
+        <h2>Redel<br /><span class="gradient-text">Santos</span></h2>
+        <p>Automation Specialist from Dasma, Cavite. I build scalable no-code and AI-powered systems that eliminate manual tasks and streamline operations — for real businesses with real problems.</p>
+        <p>With hands-on experience across U.S. and local companies — lending, manufacturing, food service, contracting, and construction — I bring practical automation that actually sticks. Expert in n8n, Make, and Zapier with deep capabilities in RAG, Voice AI, and custom web apps.</p>
+        <div class="about-values">
+          <div class="value">
+            <div class="value-icon">01</div>
+            <div>
+              <strong>No-Code to Full Stack</strong>
+              <p>From drag-and-drop n8n flows to fully custom web apps built with Claude AI and VS Code.</p>
+            </div>
+          </div>
+          <div class="value">
+            <div class="value-icon">02</div>
+            <div>
+              <strong>Industry-Agnostic</strong>
+              <p>Finance, manufacturing, food service, construction, contracting — I've built for all of them.</p>
+            </div>
+          </div>
+          <div class="value">
+            <div class="value-icon">03</div>
+            <div>
+              <strong>Maintained & Monitored</strong>
+              <p>Every system is documented, monitored, troubleshot, and maintained long after delivery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-poster">
+          <img src="post.png" alt="Redel Santos — AI Automation Specialist" />
+        </div>
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <strong>Discovery Call</strong>
+              <span>Understand workflows, pain points & goals</span>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <strong>Proposal & Roadmap</strong>
+              <span>Clear scope, tools, timeline & pricing</span>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <strong>Build & Iterate</strong>
+              <span>Fast delivery with regular progress updates</span>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <strong>Deploy & Maintain</strong>
+              <span>Docs, training, monitoring & ongoing support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">
+          <span class="section-num">05</span>
+          <div class="section-line"></div>
+          <span class="section-tag-text">Social Proof</span>
+        </div>
+        <h2>What<br /><span class="gradient-text">clients say.</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Redel built us a Slack bot and lead scraping pipeline that changed how our sales team operates. Huge time saver from week one."</p>
+          <div class="client">
+            <div class="client-avatar ca1">US</div>
+            <div><strong>Client</strong><span>Us Lending Company</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card featured-testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"The multi-branch dashboard and AI chatbot he built for our bakeshop was beyond what we expected. Our managers finally have real-time visibility."</p>
+          <div class="client">
+            <div class="client-avatar ca2">BK</div>
+            <div><strong>Owner</strong><span>Bakery Company</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Full web app, SMS automation, and marketing pipeline — delivered on time, zero fuss. Genuinely skilled and very reliable."</p>
+          <div class="client">
+            <div class="client-avatar ca3">RF</div>
+            <div><strong>Manager</strong><span>Roofing Company</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="booking">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">
+          <span class="section-num">07</span>
+          <div class="section-line"></div>
+          <span class="section-tag-text">Schedule</span>
+        </div>
+        <h2>Book a free<br /><span class="gradient-text">discovery call.</span></h2>
+        <p>Pick a slot — 30 minutes, no commitment. Let's talk about your project.</p>
+      </div>
+
+      <div class="booking-card">
+
+        <!-- LEFT: Calendar -->
+        <div class="booking-left">
+          <div class="cal-header">
+            <button class="cal-nav" id="calPrev" aria-label="Previous month">
+              <svg viewBox="0 0 20 20" fill="none"><path d="M13 5l-5 5 5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <span class="cal-title" id="calMonthYear"></span>
+            <button class="cal-nav" id="calNext" aria-label="Next month">
+              <svg viewBox="0 0 20 20" fill="none"><path d="M7 5l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+          <div class="cal-week-labels">
+            <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+          </div>
+          <div class="cal-grid" id="calGrid"></div>
+
+          <div class="cal-slots" id="calSlots">
+            <div class="cal-slots-label">
+              <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M10 6v4l2.5 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Available times — <span id="calSelectedDate"></span>
+            </div>
+            <div class="cal-slots-grid" id="calSlotsGrid"></div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Info + Form -->
+        <div class="booking-right">
+          <div class="booking-info">
+            <div class="bi-row">
+              <svg viewBox="0 0 20 20" fill="none"><rect x="3" y="4" width="14" height="13" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M3 8h14M7 2v3M13 2v3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              <span>30-min Discovery Call</span>
+            </div>
+            <div class="bi-row">
+              <svg viewBox="0 0 20 20" fill="none"><path d="M10 2a6 6 0 100 12A6 6 0 0010 2zM4.93 13.93A10 10 0 002 18M15.07 13.93A10 10 0 0118 18" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              <span>Google Meet · Remote</span>
+            </div>
+            <div class="bi-row">
+              <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M10 5v5l3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              <span>Philippine Time (PHT, UTC+8)</span>
+            </div>
+            <div class="bi-row">
+              <svg viewBox="0 0 20 20" fill="none"><path d="M10 2l2.4 4.9 5.4.8-3.9 3.8.9 5.3L10 14.3l-4.8 2.5.9-5.3L2.2 7.7l5.4-.8L10 2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+              <span>Free — no strings attached</span>
+            </div>
+          </div>
+
+          <div class="booking-selection" id="bookingSelection">
+            <div class="bs-placeholder">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="8" width="36" height="34" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M6 18h36M16 6v6M32 6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="16" cy="28" r="2" fill="currentColor" opacity=".3"/><circle cx="24" cy="28" r="2" fill="currentColor" opacity=".3"/><circle cx="32" cy="28" r="2" fill="currentColor" opacity=".3"/></svg>
+              <p>Select a date and time<br/>on the calendar</p>
+            </div>
+          </div>
+
+          <form class="booking-form" id="bookingForm">
+            <div class="bf-row">
+              <div class="bf-field">
+                <label>Full Name</label>
+                <input type="text" id="bfName" placeholder="Juan dela Cruz" required/>
+              </div>
+              <div class="bf-field">
+                <label>Email</label>
+                <input type="email" id="bfEmail" placeholder="juan@company.com" required/>
+              </div>
+            </div>
+            <div class="bf-field">
+              <label>What do you need?</label>
+              <textarea id="bfMsg" placeholder="Tell me about what you want to automate or build..." rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn-primary bf-submit" id="bookingSubmit" disabled>
+              <svg viewBox="0 0 20 20" fill="none"><rect x="3" y="4" width="14" height="13" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 8h14M7 2v3M13 2v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Choose a date first
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <div class="contact-left">
+          <div class="section-label" style="margin-bottom:20px">
+            <span class="section-num">06</span>
+            <div class="section-line"></div>
+            <span class="section-tag-text">Contact</span>
+          </div>
+          <h2>Let's build<br /><span class="gradient-text">something.</span></h2>
+          <p>Tell me about your project. I'll get back to you within 24 hours with a clear plan.</p>
+          <div class="contact-info">
+            <a href="mailto:rasantos1013@gmail.com" class="contact-link">
+              <svg viewBox="0 0 20 20" fill="none"><path d="M2 4h16v12H2V4z" stroke="currentColor" stroke-width="1.5"/><path d="M2 4l8 7 8-7" stroke="currentColor" stroke-width="1.5"/></svg>
+              rasantos1013@gmail.com
+            </a>
+            <a href="tel:+639120205367" class="contact-link">
+              <svg viewBox="0 0 20 20" fill="none"><path d="M4 3h4l2 5-2.5 1.5a11 11 0 005 5L14 12l5 2v4a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1z" stroke="currentColor" stroke-width="1.5"/></svg>
+              +639-120-205-367
+            </a>
+            <a href="https://redelworkz.pro" target="_blank" class="contact-link">
+              <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M2 10h16M10 2a15 15 0 010 16M10 2a15 15 0 000 16" stroke="currentColor" stroke-width="1.5"/></svg>
+              redelworkz.pro
+            </a>
+          </div>
+          <div class="social-links">
+            <a href="https://onlinejobs.ph/jobseekers/info/4014818" target="_blank" class="social-btn" aria-label="OnlineJobs PH">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 6h-1V4c0-1.1-.9-2-2-2H7C5.9 2 5 2.9 5 4v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM7 4h10v2H7V4zm13 15H4V8h16v11z"/></svg>
+            </a>
+            <a href="mailto:rasantos1013@gmail.com" class="social-btn" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4V4z" stroke="currentColor" stroke-width="1.5"/><path d="M4 4l8 9 8-9" stroke="currentColor" stroke-width="1.5"/></svg>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="john@company.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Project Type</label>
+            <select name="service">
+              <option value="">Select a service...</option>
+              <option>Workflow Automation (n8n / Make / Zapier)</option>
+              <option>RAG System Development</option>
+              <option>Voice AI Agent</option>
+              <option>AI Chatbot / Agent Development</option>
+              <option>Data Scraping & Lead Automation</option>
+              <option>Custom Web App Development</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Tell me about your project</label>
+            <textarea name="message" rows="5" placeholder="Describe your workflow, what you want to automate, and any tools you're currently using..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Send Message →</button>
+          <p class="form-note">I respond within 24 hours, usually much faster.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="logo">REDEL<span>WORKZ</span></div>
+      <p>© 2026 Redel Santos — AI Automation Specialist · Dasma, Cavite</p>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CHATBOT -->
+  <div id="chatbot">
+    <button id="chatbot-toggle" aria-label="Open chat">
+      <div id="chat-avatar-robot">
+        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- head -->
+          <rect x="18" y="8" width="24" height="18" rx="8" fill="#1a1a2e" stroke="url(#rg)" stroke-width="1.5"/>
+          <!-- visor -->
+          <rect x="22" y="13" width="16" height="7" rx="3" fill="url(#rg2)" opacity="0.9"/>
+          <!-- eyes -->
+          <circle cx="26" cy="16.5" r="2" fill="#7c6ff7"/>
+          <circle cx="34" cy="16.5" r="2" fill="#7c6ff7"/>
+          <circle cx="26" cy="16.5" r="0.8" fill="#fff"/>
+          <circle cx="34" cy="16.5" r="0.8" fill="#fff"/>
+          <!-- neck -->
+          <rect x="27" y="26" width="6" height="4" rx="2" fill="#0d0d16" stroke="url(#rg)" stroke-width="1"/>
+          <!-- body -->
+          <rect x="14" y="30" width="32" height="20" rx="8" fill="#0d0d16" stroke="url(#rg)" stroke-width="1.5"/>
+          <!-- chest light -->
+          <ellipse cx="30" cy="39" rx="5" ry="3" fill="url(#rg)" opacity="0.6"/>
+          <!-- left arm -->
+          <rect x="5" y="30" width="8" height="16" rx="4" fill="#0d0d16" stroke="url(#rg)" stroke-width="1.5"/>
+          <!-- right arm -->
+          <rect x="47" y="30" width="8" height="16" rx="4" fill="#0d0d16" stroke="url(#rg)" stroke-width="1.5"/>
+          <!-- body lines -->
+          <line x1="22" y1="34" x2="38" y2="34" stroke="url(#rg)" stroke-width="0.8" opacity="0.4"/>
+          <defs>
+            <linearGradient id="rg" x1="0" y1="0" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#7c6ff7"/>
+              <stop offset="1" stop-color="#22d3ee"/>
+            </linearGradient>
+            <linearGradient id="rg2" x1="22" y1="13" x2="38" y2="20" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#7c6ff7" stop-opacity="0.3"/>
+              <stop offset="1" stop-color="#22d3ee" stop-opacity="0.3"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div id="chat-notif">1</div>
+    </button>
+
+    <div id="chatbot-window">
+      <div id="chat-header">
+        <div class="chat-header-info">
+          <img src="profile.png" alt="Redel" class="chat-header-avatar" />
+          <div>
+            <div class="chat-header-name">Redel Santos</div>
+            <div class="chat-header-status"><span class="chat-online-dot"></span>Online now</div>
+          </div>
+        </div>
+        <button id="chat-close" aria-label="Close">
+          <svg viewBox="0 0 20 20" fill="none"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+
+      <div id="chat-messages">
+        <div class="chat-msg bot">
+          <img src="profile.png" class="msg-avatar" alt="Redel" />
+          <div class="msg-bubble">
+            Hey! 👋 I'm <strong>Redel</strong>, an AI Automation Specialist.<br /><br />
+            I build n8n, Make & Zapier workflows, RAG systems, Voice AI agents, and custom web apps.<br /><br />
+            How can I help you today?
+          </div>
+        </div>
+      </div>
+
+      <div id="chat-quick-replies">
+        <button class="quick-btn" data-key="services">What services do you offer?</button>
+        <button class="quick-btn" data-key="availability">Are you available?</button>
+        <button class="quick-btn" data-key="tools">What tools do you use?</button>
+        <button class="quick-btn" data-key="start">How do I start a project?</button>
+      </div>
+
+      <div id="chat-input-row">
+        <input type="text" id="chat-input" placeholder="Type a message..." autocomplete="off" />
+        <button id="chat-send">
+          <svg viewBox="0 0 20 20" fill="none"><path d="M18 10L3 3l3 7-3 7 15-7z" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
