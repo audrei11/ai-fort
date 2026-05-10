@@ -413,8 +413,12 @@ function animateCount(el, target, duration = 1500) {
   const lbClose   = document.getElementById('lbClose');
   const lbBackdrop = document.getElementById('lbBackdrop');
 
-  function openLightbox(src) {
-    lbImg.src = src;
+  function openLightbox(urls, idx) {
+    idx = idx || 0;
+    if (idx >= urls.length) return;
+    lbImg.onerror = () => openLightbox(urls, idx + 1);
+    lbImg.onload  = () => { lbImg.onerror = null; };
+    lbImg.src = urls[idx];
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
@@ -422,14 +426,14 @@ function animateCount(el, target, duration = 1500) {
   function closeLightbox() {
     lightbox.classList.remove('open');
     document.body.style.overflow = '';
-    setTimeout(() => { lbImg.src = ''; }, 300);
+    setTimeout(() => { lbImg.src = ''; lbImg.onerror = null; }, 300);
   }
 
   document.querySelectorAll('.project-image-screenshot').forEach(el => {
     el.addEventListener('click', () => {
       const raw = el.style.backgroundImage;
-      const match = raw.match(/url\(['"]?([^'"]+)['"]?\)/);
-      if (match) openLightbox(match[1]);
+      const urls = [...raw.matchAll(/url\(['"]?([^'")\s]+)['"]?\)/g)].map(m => m[1]);
+      if (urls.length) openLightbox(urls, 0);
     });
   });
 
