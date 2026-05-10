@@ -405,3 +405,37 @@ function animateCount(el, target, duration = 1500) {
   };
   requestAnimationFrame(step);
 }
+
+/* ===== IMAGE LIGHTBOX ===== */
+(function () {
+  const lightbox  = document.getElementById('imgLightbox');
+  const lbImg     = document.getElementById('lbImg');
+  const lbClose   = document.getElementById('lbClose');
+  const lbBackdrop = document.getElementById('lbBackdrop');
+
+  function openLightbox(src) {
+    lbImg.src = src;
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+    setTimeout(() => { lbImg.src = ''; }, 300);
+  }
+
+  document.querySelectorAll('.project-image-screenshot').forEach(el => {
+    el.addEventListener('click', () => {
+      const raw = el.style.backgroundImage;
+      const match = raw.match(/url\(['"]?([^'"]+)['"]?\)/);
+      if (match) openLightbox(match[1]);
+    });
+  });
+
+  lbClose.addEventListener('click', closeLightbox);
+  lbBackdrop.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+})();
