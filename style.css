@@ -626,6 +626,9 @@ spline-viewer {
   position: relative;
 }
 .project-card:hover { border-color: rgba(124,111,247,0.35); transform: translateY(-6px); }
+.pc-feature { grid-column: span 12; border-color: rgba(245,158,11,0.25); }
+.pc-feature:hover { border-color: rgba(245,158,11,0.45); }
+.pc-feature .project-image { height: 280px; }
 .pc-1 { grid-column: span 7; }
 .pc-2 { grid-column: span 5; }
 .pc-3 { grid-column: span 4; }
@@ -762,6 +765,24 @@ spline-viewer {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+.project-links { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+.project-link-btn {
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  color: #e8e8f0;
+  cursor: none;
+  transition: border-color .25s, background .25s, transform .25s;
+}
+.project-link-btn:hover { border-color: rgba(255,255,255,0.25); background: rgba(255,255,255,0.05); transform: translateY(-2px); }
+.project-link-btn.primary {
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  border-color: transparent;
+  color: #1a1100;
+}
+.project-link-btn.primary:hover { filter: brightness(1.08); }
 
 /* ===== STACK ===== */
 #stack { background: var(--surface); }
