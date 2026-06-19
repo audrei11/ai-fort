@@ -51,6 +51,35 @@ const observer = new IntersectionObserver(entries => {
 
 fadeTargets.forEach(el => observer.observe(el));
 
+/* ===== LAZY-LOAD PROJECT SCREENSHOTS ===== */
+const bgTargets = document.querySelectorAll('[data-bg]');
+const bgObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    const el = entry.target;
+    el.style.backgroundImage = `url('${el.dataset.bg}')`;
+    el.removeAttribute('data-bg');
+    bgObserver.unobserve(el);
+  });
+}, { rootMargin: '400px 0px' });
+bgTargets.forEach(el => bgObserver.observe(el));
+
+/* ===== LAZY-LOAD SPLINE 3D VIEWER ===== */
+const robotSection = document.getElementById('robot-section');
+if (robotSection) {
+  const splineObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const script = document.createElement('script');
+      script.type = 'module';
+      script.src = 'https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js';
+      document.head.appendChild(script);
+      splineObserver.disconnect();
+    });
+  }, { rootMargin: '600px 0px' });
+  splineObserver.observe(robotSection);
+}
+
 /* ===== MAGNETIC BUTTONS ===== */
 document.querySelectorAll('.btn-primary, .btn-ghost').forEach(btn => {
   btn.addEventListener('mousemove', e => {
